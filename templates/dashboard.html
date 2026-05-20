@@ -201,37 +201,37 @@
 <nav class="flex-1 overflow-y-auto">
 <ul class="flex flex-col gap-1">
 <li>
-<a class="flex items-center gap-stack-md px-container-padding py-3 text-primary bg-primary-container/10 border-r-4 border-primary scale-95 transition-transform group" href="#">
+<a class="flex items-center gap-stack-md px-container-padding py-3 text-primary bg-primary-container/10 border-r-4 border-primary scale-95 transition-transform group" href="{{ url_for('dashboard') }}">
 <span class="material-symbols-outlined group-hover:drop-shadow-[0_0_8px_rgba(164,230,255,0.8)] transition-all" data-icon="dashboard">dashboard</span>
 <span class="font-title-md text-title-md font-bold">Dashboard</span>
 </a>
 </li>
 <li>
-<a class="flex items-center gap-stack-md px-container-padding py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary transition-all duration-300" href="#">
+<a class="flex items-center gap-stack-md px-container-padding py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary transition-all duration-300" href="{{ url_for('expenses') }}">
 <span class="material-symbols-outlined" data-icon="payments">payments</span>
 <span class="font-title-md text-[18px] leading-6 font-medium">Expenses</span>
 </a>
 </li>
 <li>
-<a class="flex items-center gap-stack-md px-container-padding py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary transition-all duration-300" href="#">
+<a class="flex items-center gap-stack-md px-container-padding py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary transition-all duration-300" href="{{ url_for('categories') }}">
 <span class="material-symbols-outlined" data-icon="category">category</span>
 <span class="font-title-md text-[18px] leading-6 font-medium">Categories</span>
 </a>
 </li>
 <li>
-<a class="flex items-center gap-stack-md px-container-padding py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary transition-all duration-300" href="#">
+<a class="flex items-center gap-stack-md px-container-padding py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary transition-all duration-300" href="{{ url_for('vendors') }}">
 <span class="material-symbols-outlined" data-icon="store">store</span>
 <span class="font-title-md text-[18px] leading-6 font-medium">Vendors</span>
 </a>
 </li>
 <li>
-<a class="flex items-center gap-stack-md px-container-padding py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary transition-all duration-300" href="#">
+<a class="flex items-center gap-stack-md px-container-padding py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary transition-all duration-300" href="{{ url_for('reports') }}">
 <span class="material-symbols-outlined" data-icon="assessment">assessment</span>
 <span class="font-title-md text-[18px] leading-6 font-medium">Reports</span>
 </a>
 </li>
 <li>
-<a class="flex items-center gap-stack-md px-container-padding py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary transition-all duration-300" href="#">
+<a class="flex items-center gap-stack-md px-container-padding py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary transition-all duration-300" href="{{ url_for('settings') }}">
 <span class="material-symbols-outlined" data-icon="settings">settings</span>
 <span class="font-title-md text-[18px] leading-6 font-medium">Settings</span>
 </a>
@@ -239,7 +239,7 @@
 </ul>
 </nav>
 <div class="mt-auto px-container-padding">
-<a class="flex items-center gap-stack-md px-4 py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:text-error transition-all duration-300 rounded-lg" href="#">
+<a class="flex items-center gap-stack-md px-4 py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:text-error transition-all duration-300 rounded-lg" href="{{ url_for('login') }}">
 <span class="material-symbols-outlined" data-icon="logout">logout</span>
 <span class="font-title-md text-[18px] leading-6 font-medium">Logout</span>
 </a>

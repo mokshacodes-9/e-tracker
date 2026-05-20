@@ -211,7 +211,7 @@
 <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Welcome Back</h2>
 <p class="font-body-sm text-body-sm text-on-surface-variant">Enter your credentials to access the secure portal.</p>
 </div>
-<form action="#" class="space-y-stack-md" method="POST">
+<form action="{{ url_for('login') }}" class="space-y-stack-md" method="POST">
 <div class="space-y-stack-sm relative">
 <label class="font-label-caps text-label-caps text-outline uppercase" for="email">Username / Email</label>
 <div class="relative">
